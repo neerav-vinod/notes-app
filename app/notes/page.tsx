@@ -23,8 +23,7 @@ export default function Notes () {
 
    const [dataarray,setDataArray] = useState<arrayData[]>([]);
    
-   const router = useRouter();
-
+   
    const {email} = useEmail();
 
 
