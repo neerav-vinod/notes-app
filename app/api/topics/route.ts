@@ -16,11 +16,7 @@ export async function GET(request:NextRequest){
     return NextResponse.json({topics})
 }
 
-type Params = {
-    params:{
-        id:string;
-    }    
-}
+
 
 export async function DELETE(request : NextRequest) {
     const id = request.nextUrl.searchParams.get("id");
