@@ -40,7 +40,7 @@ export default function Notes () {
 
     useEffect(()=>{
         fetchapi();
-    },[email])
+    },[])
     return(
         <div>
             <SessionProvider>
