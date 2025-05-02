@@ -21,11 +21,11 @@ export default function Notes () {
     }
 
 
-   const [dataarray,setDataArray] = useState();
+   const [dataarray,setDataArray] = useState<arrayData[]>([]);
    
    const router = useRouter();
 
-   const {email,setEmail} = useEmail();
+   const {email} = useEmail();
 
 
     const fetchapi = async() =>{
@@ -41,7 +41,7 @@ export default function Notes () {
 
     useEffect(()=>{
         fetchapi();
-    },[])
+    },[email])
     return(
         <div>
             <SessionProvider>
