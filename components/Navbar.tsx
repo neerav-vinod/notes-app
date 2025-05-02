@@ -20,7 +20,7 @@ export default function Navbar() {
       setEmail(session?.user?.email)
       localStorage.setItem("userEmail",session?.user?.email)
     }
-  }, [session])
+  }, [session,setEmail])
 
 
   

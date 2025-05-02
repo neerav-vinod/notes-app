@@ -1,13 +1,13 @@
 'use client'
 import { useEmail } from "@/components/Context";
 import Navbar from "@/components/Navbar";
-import RemoveBtn from "@/components/RemoveBtn";
+
 import { SessionProvider } from "next-auth/react";
-import Link from "next/link";
+
 import { useRouter } from "next/navigation";
 
 import { useEffect, useState } from "react";
-import { HiPencilAlt } from "react-icons/hi";
+
 
 
 
